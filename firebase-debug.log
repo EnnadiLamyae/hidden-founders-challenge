@@ -1,0 +1,36 @@
+[debug] [2017-12-07T17:01:00.098Z] ----------------------------------------------------------------------
+[debug] [2017-12-07T17:01:00.101Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-12-07T17:01:00.101Z] CLI Version:   3.15.4
+[debug] [2017-12-07T17:01:00.101Z] Platform:      linux
+[debug] [2017-12-07T17:01:00.101Z] Node Version:  v8.7.0
+[debug] [2017-12-07T17:01:00.101Z] Time:          Thu Dec 07 2017 17:01:00 GMT+0000 (WET)
+[debug] [2017-12-07T17:01:00.101Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-07T17:01:00.114Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-07T17:01:00.114Z] > authorizing via signed-in user
+[debug] [2017-12-07T17:01:00.116Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-12-07T17:01:00.117Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/Gl9shAhf3i2ga2wOFmgZycaKQxr8Bm_h13Mf_x0ZW1A',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Dec 07 2017 17:01:00 GMT+0000 (WET)
+[debug] [2017-12-07T17:01:02.292Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-07T17:01:02.351Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/lamyaechallenge  
+ Thu Dec 07 2017 17:01:02 GMT+0000 (WET)
+[debug] [2017-12-07T17:01:03.855Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-07T17:01:03.859Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/lamyaechallenge/tokens  
+ Thu Dec 07 2017 17:01:03 GMT+0000 (WET)
+[debug] [2017-12-07T17:01:05.234Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/essorline/Desktop/challenge/hidden'...
+[info] 
+[debug] [2017-12-07T17:01:05.243Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/lamyaechallenge  
+ Thu Dec 07 2017 17:01:05 GMT+0000 (WET)
+[debug] [2017-12-07T17:01:07.644Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-07T17:01:07.644Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/737038420875/clients/_:getWebAppConfig  
+ Thu Dec 07 2017 17:01:07 GMT+0000 (WET)
+[debug] [2017-12-07T17:01:14.668Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist
+[info] ✔  hosting: Local server: http://localhost:5000
+
