@@ -22,7 +22,7 @@
                     </header>
                     <section class="modal-card-body">
                         <div class="columns is-multiline">
-                            <div class="column is-one-quarter cover" v-for="item in photos"
+                            <div class="column is-one-quarter" v-for="item in photos"
                                     :key="item">
                                 <img  alt="Cover"  v-bind:src="item" class="column is-12 phs">
                                 <button class="button is-primary " @click="save(item)" :id="item" >
