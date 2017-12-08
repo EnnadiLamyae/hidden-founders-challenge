@@ -39,7 +39,13 @@
 </template>
 <script>
 import axios from 'axios'
+// import store from '@/store'
+// import { mapGetters } from 'vuex'
+
 export default {
+//   computed: mapGetters([
+//     'connected'
+//   ]),
   data () {
       return {
           connected : false
@@ -55,7 +61,8 @@ export default {
           FB.getLoginStatus(function(response) {
               vm.connected = response.status === 'connected'
           })
-          setTimeout(this.status, 3000);
+        //   store.dispatch('setConnected', vm.connected)
+          setTimeout(this.status, 5000);
       },
       signOut () {
           let vm = this

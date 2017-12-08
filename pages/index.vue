@@ -10,6 +10,9 @@
                     <h2 class="subtitle" v-if="connected == false">
                         You wanna test feel  free and Sign In .
                     </h2>
+                     <h2 class="subtitle" v-else>
+                        Navigate to your  Profile to see your albums and photos .
+                    </h2>
                     <button class="button is-link" @click='signIn' v-if="connected == false">
                         <span class="fa fa-facebook-official "> Sign in with facebook </span>
                     </button>

@@ -46,6 +46,7 @@ export default {
     name: 'Profile',
     async asyncData () {
         return {
+            connected: false,
             id: '',
             albums: [],
             album: {
@@ -70,7 +71,7 @@ export default {
         status () {
             let vm = this
             FB.getLoginStatus(function(response) {
-                if(response.status === 'connected')
+                if( vm.connected = response.status === 'connected')
                     vm.id = response.authResponse.userID
             })
         },
@@ -136,14 +137,14 @@ export default {
             let storage = firebase.storage()
             let storageRef = storage.ref()
             let imageRef = storageRef.child('images/' + vm.id +'/'+item)
-        
             axios.get(item, { responseType:"blob" })
             .then( response => {
                 imageRef.put(response.data).then(function(snapshot) {
                     console.log('saved')
                 }) 
+            }).catch( error => {
+                console.log('Error : not saved ')
             })
-            
         }
     }
 }
