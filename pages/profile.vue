@@ -115,6 +115,7 @@ export default {
         getPhotos (id) {
             let vm = this
             FB.api('/'+id+'/photos',
+            {'limit':'100'},
             function (response) {
                 if (response && response.data && response.data.length){
                     response.data.forEach(function (photo) {

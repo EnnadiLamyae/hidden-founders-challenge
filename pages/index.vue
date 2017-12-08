@@ -81,7 +81,9 @@ export default {
         FB.api(
             '/me/albums',
             'GET',
-            { "fields":"cover_photo,name" },
+            { "fields":"cover_photo,name",
+              'limit': '100'
+             },
             function(response) {
                 response.data.forEach(function (datum) {
                     vm.getCover(datum.cover_photo.id , response => {
