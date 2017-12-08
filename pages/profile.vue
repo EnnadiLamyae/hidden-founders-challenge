@@ -60,11 +60,8 @@ export default {
     components:{
         Menu
     },
-    beforeMount: function () {
-        let vm = this
-        this.status()
-    },
     mounted: function() {
+        this.status()
          this.getAlbums()
     },
     methods: {
