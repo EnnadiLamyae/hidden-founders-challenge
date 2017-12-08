@@ -7,7 +7,7 @@
                     <div class="column  is-one-quarter cover" v-for="item in albums"
                             :key="item">
                         <span class="is-title">{{item.name}}</span>
-                        <img  alt="Cover"  v-bind:src="item.cover" class="column is-12">
+                        <img  alt="Cover"  v-bind:src="item.cover" class="column is-12 ph">
                         <button class="button is-primary" @click="getPhotos(item.id)">See all Photos</button>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                         <div class="columns is-multiline">
                             <div class="column is-one-quarter cover" v-for="item in photos"
                                     :key="item">
-                                <img  alt="Cover"  v-bind:src="item" class="column is-12">
+                                <img  alt="Cover"  v-bind:src="item" class="column is-12 phs">
                                 <button class="button is-primary " @click="save(item)" :id="item" >
                                     <span>Save</span>
                                 </button>
@@ -62,7 +62,10 @@ export default {
     },
     mounted: function() {
         this.status()
-         this.getAlbums()
+        this.getAlbums()
+    },
+    destroyed () {
+     console.log('destroyed')
     },
     methods: {
         status () {
@@ -147,9 +150,3 @@ export default {
 }
 </script>
 
-<style scoped>
-.cover {
-    min-height: 367.98 px;
-    max-height: 367.98 px;
-}
-</style>

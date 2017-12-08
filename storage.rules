@@ -1,5 +1,5 @@
 service firebase.storage {
-  match /b/{bucket}/o {
+  match /b/lamyaechallenge.appspot.com/o {
     match /{allPaths=**} {
       allow read, write
     }
