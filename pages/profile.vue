@@ -3,8 +3,8 @@
         <Menu/>
         <div class="hero-body">
             <div class="container has-text-centered" id="body">
-                <div class="columns">
-                    <div class="column  cover" v-for="item in albums"
+                <div class="columns is-multiline">
+                    <div class="column  is-one-quarter cover" v-for="item in albums"
                             :key="item">
                         <span class="is-title">{{item.name}}</span>
                         <img  alt="Cover"  v-bind:src="item.cover" class="column is-12">
@@ -21,8 +21,8 @@
                         <button class="delete" aria-label="close" @click="close"></button>
                     </header>
                     <section class="modal-card-body">
-                        <div class="columns is-vcentered">
-                            <div class="column is-4 cover" v-for="item in photos"
+                        <div class="columns is-multiline">
+                            <div class="column is-one-quarter cover" v-for="item in photos"
                                     :key="item">
                                 <img  alt="Cover"  v-bind:src="item" class="column is-12">
                                 <button class="button is-primary " @click="save(item)" :id="item" >
