@@ -24,7 +24,7 @@
                             <nuxt-link to="/profile" v-if="connected">Profile</nuxt-link>
                         </span>
                         <span class="navbar-item">
-                            <a class="button is-white is-outlined is-small" href=https://github.com/EnnadiLamyae/hidden-founders-challenge">
+                            <a class="button is-white is-outlined is-small" href="https://github.com/EnnadiLamyae/hidden-founders-challenge">
                                 <span class="icon">
                                     <i class="fa fa-github"></i>
                                 </span>

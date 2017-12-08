@@ -1,7 +1,7 @@
 import * as firebase from 'firebase'
   // Initialize Firebase
   let config = {
-    apiKey: "app-key",
+    apiKey: "",
     authDomain: "",
     databaseURL: "",
     projectId: "",
